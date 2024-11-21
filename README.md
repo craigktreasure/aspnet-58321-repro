@@ -22,14 +22,14 @@ To setup the source code to reproduce this issue yourself:
 ```powershell
 mkdir aspnet-58321-repro
 cd aspnet-58321-repro
-dotnet new globaljson # Expected to be configured with version 9.0.100-rc.2.24474.11
+dotnet new globaljson # Expected to be configured with version 9.0.100
 dotnet new install Microsoft.FluentUI.AspNetCore.Templates
 dotnet new fluentblazor -o src\FluentUIApp
 ```
 
 The code above, at the time of writing, produces:
 
-* A `global.json` file configured with `"version": "9.0.100-rc.2.24474.11"`.
+* A `global.json` file configured with `"version": "9.0.100"`.
 * A .NET 8 Blazor project configured for Fluent UI.
 
 ## Repro steps
